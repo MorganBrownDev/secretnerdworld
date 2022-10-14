@@ -44,7 +44,7 @@ async function getData2() {
 
   let gimg = data_cms['data']['img'];
 
-  game_cms.style.backgroundImage = "url(" + gimg +")";
+  game_cms.src = gimg;
 
 }
 
