@@ -32,3 +32,21 @@ async function getData() {
 
 getData();
 
+api_url_data = 'https://0mzz447i.directus.app/items/games/1';
+ // Change of data Url for a new Superhero
+
+ let game_cms = document.querySelector('#test');
+// API function to fetch API data for the html elements that have asked for it
+
+async function getData2() {
+  let response_data = await fetch(api_url_data);
+  let data_cms = await response_data.json();
+
+  let gimg = data_cms['data']['img'];
+
+  game_cms.style.backgroundImage = "url(" + gimg +")";
+
+}
+
+getData2();
+
