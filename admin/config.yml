@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "media"
+public_folder: "media"
+publish_mode: editorial_workflow
+site_url: https://wlm-cms.netlify.app/
+collections:
+  - label: "About"
+    name: "about"
+    files:
+    - label: "Info"
+      name: "info"
+      format: 'json'
+      file: "content/about.json"
+      fields:
+        - {label: "Message", name: message, widget: string}
+        - {label: "Featured Image", name: "thumbnail", widget: "image"}
+        - {label: "slide_image_1", name: "slide_image_1", widget: "image"}
+        - {label: "slide_image_2", name: "slide_image_2", widget: "image"}
+        - {label: "slide_image_3", name: "slide_image_3", widget: "image"}
+
+       
