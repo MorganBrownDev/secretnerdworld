@@ -7,8 +7,6 @@ sections:
 - type: document
   path: https://github.com/MorganBrownDev/secretnerdworld/blob/main/index.html
   label: Test
-  match: "**/*"
-  read_only: false
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
