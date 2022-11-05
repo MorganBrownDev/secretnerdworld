@@ -11,17 +11,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="full-page text-center">
-      <div class="menu-controls">
-        <a href="dashboard.html" class="select-btn">PC</a>
-        <a href="dashboard.html" class="select-btn">Xbox</a>
-        <a href="dashboard.html" class="select-btn">Playstation</a>
-        <a href="dashboard.html" class="select-btn">All Platforms</a>
-      </div>
+    <div class="container text-center">
+      <div class="btn" id="next">next</div>
+      <div class="btn" id="prev">prev</div>
+      <button type="button" class="btn fbtn" data-filter=".category-a">Category A</button>
+      <button type="button" class="btn fbtn" data-filter=".category-b">Category B</button>
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2" id="gameid">
+              </div>
+            </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="scripts/api_data.js"></script>
-    <script src="scripts/netlify_cms.js"></script>
-    <script src="scripts/admin_redirect.js"></script>
+    <!--<script src="scripts/netlify_cms.js"></script>-->
+    <!--<script src="scripts/admin_redirect.js"></script>-->
 </body>
 </html>
